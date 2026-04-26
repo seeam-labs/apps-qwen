@@ -1,0 +1,45 @@
+```
+# Android build outputs
+build/
+.gradle/
+*.apk
+*.aar
+*.jar
+
+# Android Studio files
+.idea/
+*.iml
+*.iws
+*.log
+
+# Gradle
+.gradle/
+gradle-wrapper.jar
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+# Android profiling
+*.hprof
+*.trace
+
+# Generated files
+gen/
+out/
+
+# Debug
+debug/
+release/
+
+# Keystore
+*.keystore
+*.jks
+
+# Environment
+.env
+.env.local
+.env.*
+```
