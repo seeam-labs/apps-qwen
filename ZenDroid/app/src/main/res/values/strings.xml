@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZenDroid</string>
+    <string name="scan_target_hint">Enter IP, hostname, or CIDR (e.g., 192.168.1.0/24)</string>
+    <string name="start_scan">START SCAN</string>
+    <string name="stop_scan">STOP</string>
+    <string name="scan_profile">Scan Profile</string>
+    <string name="quick_scan">Quick Scan</string>
+    <string name="intense_scan">Intense Scan</string>
+    <string name="stealth_scan">Stealth Scan</string>
+    <string name="custom_scan">Custom</string>
+    <string name="root_required">Root Required</string>
+    <string name="root_not_available">Root access not available. Some features disabled.</string>
+    <string name="legal_disclaimer">For authorized security testing only. Unauthorized scanning is illegal.</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="hosts_found">Hosts Found</string>
+    <string name="ports_open">Open Ports</string>
+    <string name="scan_complete">Scan Complete</string>
+    <string name="scan_failed">Scan Failed</string>
+    <string name="terminal_output">Terminal Output</string>
+    <string name="host_details">Host Details</string>
+    <string name="port_details">Port Details</string>
+    <string name="os_detection">OS Detection</string>
+    <string name="services">Services</string>
+    <string name="scripts">Scripts</string>
+    <string name="export">Export</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="settings">Settings</string>
+    <string name="theme">Theme</string>
+    <string name="binary_info">Binary Information</string>
+    <string name="about">About</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="nmap_credits">Powered by Nmap Network Scanner</string>
+</resources>

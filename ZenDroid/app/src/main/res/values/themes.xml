@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.ZenDroid" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryVariant">@color/neon_cyan_dim</item>
+        <item name="colorOnPrimary">@color/cyber_void</item>
+        <item name="colorSecondary">@color/terminal_green</item>
+        <item name="colorSecondaryVariant">@color/neon_cyan_dim</item>
+        <item name="colorOnSecondary">@color/cyber_void</item>
+        <item name="android:statusBarColor">@color/cyber_void</item>
+        <item name="android:navigationBarColor">@color/cyber_surface</item>
+        <item name="android:windowBackground">@color/cyber_void</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.ZenDroid.Splash" parent="Theme.ZenDroid">
+        <item name="android:windowBackground">@color/cyber_void</item>
+        <item name="android:statusBarColor">@color/cyber_void</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- Cyber Card Style -->
+    <style name="CyberCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/cyber_card</item>
+        <item name="strokeColor">@color/neon_cyan_dim</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Terminal Text Style -->
+    <style name="TerminalText" parent="android:TextAppearance">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/terminal_green</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Neon Button Style -->
+    <style name="NeonButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/neon_cyan</item>
+        <item name="android:textColor">@color/cyber_void</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Danger Button Style -->
+    <style name="DangerButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/neon_red</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+</resources>

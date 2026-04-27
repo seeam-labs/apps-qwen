@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyberpunk Theme Colors -->
+    <color name="cyber_void">#050A0E</color>
+    <color name="cyber_surface">#0D1117</color>
+    <color name="cyber_card">#161B22</color>
+    
+    <!-- Neon Accents -->
+    <color name="neon_cyan">#00F5FF</color>
+    <color name="neon_cyan_dim">#008B94</color>
+    <color name="terminal_green">#39FF14</color>
+    <color name="neon_red">#FF0040</color>
+    <color name="neon_yellow">#FFF01F</color>
+    <color name="neon_purple">#BF00FF</color>
+    
+    <!-- Utility Colors -->
+    <color name="scanline_overlay">#1AFFFFFF</color>
+    <color name="text_primary">#E6EDF3</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="border_glow">#4000F5FF</color>
+    
+    <!-- Port States -->
+    <color name="port_open">#39FF14</color>
+    <color name="port_closed">#FF0040</color>
+    <color name="port_filtered">#FFF01F</color>
+</resources>
