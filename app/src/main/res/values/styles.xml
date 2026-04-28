@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with Cyberpunk/Hacker aesthetic -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/neon_green</item>
+        <item name="colorPrimaryVariant">@color/neon_green_dim</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/cyber_pink</item>
+        <item name="colorSecondaryVariant">@color/cyber_pink_dim</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/deep_void</item>
+        <item name="android:navigationBarColor">@color/deep_void</item>
+        
+        <!-- Background -->
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="backgroundColor">@color/background_primary</item>
+        
+        <!-- Font family - Monospace for terminal feel -->
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:typeface">monospace</item>
+        
+        <!-- Fullscreen -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        
+        <!-- No title -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    
+    <!-- Terminal TextView Style with glow effect -->
+    <style name="TerminalTextView">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/neon_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    
+    <!-- Hacker Button Style -->
+    <style name="HackerButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="backgroundTint">@color/neon_green</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="strokeColor">@color/neon_green</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+    
+    <!-- Hacker Card Style -->
+    <style name="HackerCard">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeColor">@color/neon_green_dim</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <!-- Dialog Theme -->
+    <style name="HackerDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/neon_green</item>
+        <item name="colorSecondary">@color/cyber_pink</item>
+        <item name="android:background">@color/deep_void</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/neon_green</item>
+        <item name="buttonBarPositiveButtonStyle">@style/HackerDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/HackerDialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/HackerDialogButton</item>
+    </style>
+    
+    <style name="HackerDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/neon_green</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="rippleColor">@color/neon_green_dim</item>
+    </style>
+    
+    <!-- Scan Card Button -->
+    <style name="ScanCardButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">120dp</item>
+        <item name="android:background">@drawable/scan_card_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

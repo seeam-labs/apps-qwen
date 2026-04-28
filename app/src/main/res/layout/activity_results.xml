@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".ui.ResultsActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/header_bg"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/terminal_bg"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back"
+            app:tint="@color/neon_green" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SCAN RESULTS"
+            android:textColor="@color/neon_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/btnExport"
+            style="@style/HackerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPORT"
+            android:textSize="12sp"
+            android:paddingHorizontal="16dp" />
+    </LinearLayout>
+
+    <!-- Scan status bar -->
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/terminal_gray_light"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <TextView
+            android:id="@+id/tvScanStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status: IDLE"
+            android:textColor="@color/neon_green"
+            android:textSize="12sp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/tvHostsFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hosts: 0"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:layout_marginEnd="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/neon_green" />
+    </LinearLayout>
+
+    <!-- Charts section -->
+    <LinearLayout
+        android:id="@+id/chartsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hacker_card_bg" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/hacker_card_bg" />
+    </LinearLayout>
+
+    <!-- Hosts list header -->
+    <TextView
+        android:id="@+id/tvListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISCOVERED HOSTS"
+        android:textColor="@color/neon_green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:padding="12dp"
+        android:background="@color/terminal_gray"
+        app:layout_constraintTop_toBottomOf="@id/chartsLayout" />
+
+    <!-- RecyclerView for hosts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tvListHeader"
+        app:layout_constraintBottom_toTopOf="@id/bottomControls" />
+
+    <!-- Bottom controls -->
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/terminal_gray_light"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnStartScan"
+            style="@style/HackerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="START SCAN"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnStopScan"
+            style="@style/HackerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="STOP"
+            android:backgroundTint="@color/hacker_red"
+            android:strokeColor="@color/hacker_red"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTopology"
+            style="@style/HackerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TOPOLOGY"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
