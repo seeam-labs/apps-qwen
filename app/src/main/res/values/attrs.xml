@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TerminalTextView">
+        <attr name="showCursor" format="boolean" />
+        <attr name="cursorBlinkRate" format="integer" />
+        <attr name="glowColor" format="color" />
+        <attr name="terminalText" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="MatrixRainView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="dropSpeed" format="integer" />
+    </declare-styleable>
+</resources>

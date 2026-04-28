@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyberpunk Color Palette -->
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_green_dim">#1A8A0A</color>
+    <color name="cyber_pink">#FF00FF</color>
+    <color name="cyber_pink_dim">#8A008A</color>
+    <color name="deep_void">#050505</color>
+    <color name="terminal_gray">#1A1A1A</color>
+    <color name="terminal_gray_light">#2A2A2A</color>
+    <color name="matrix_green">#00FF00</color>
+    <color name="hacker_red">#FF0000</color>
+    <color name="hacker_yellow">#FFFF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    <!-- Background colors -->
+    <color name="background_primary">#050505</color>
+    <color name="background_secondary">#0A0A0A</color>
+    <color name="card_background">#111111</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#39FF14</color>
+    <color name="text_secondary">#AAAAAA</color>
+    <color name="text_error">#FF3333</color>
+    <color name="text_warning">#FFFF33</color>
+</resources>
